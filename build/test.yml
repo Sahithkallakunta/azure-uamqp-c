@@ -73,7 +73,6 @@ phases:
      then
       sudo ./jenkins/linux_c_gcc44.sh
      fi
-     fi
     displayName: 'build'
     env:
       IOTHUB_CONNECTION_STRING: $(IOTHUB-CONNECTION-STRING)
