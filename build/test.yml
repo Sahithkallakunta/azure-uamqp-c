@@ -273,6 +273,8 @@ phases:
   - script: |
      if [ -f "jenkins/debian_c.sh" ]
      then
+      sudo chmod 755 jenkins/debian_c.sh
+      sudo -E ./debian_c.sh
       sudo jenkins/debian_c.sh
      fi
     displayName: 'build'
