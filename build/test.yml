@@ -184,6 +184,7 @@ phases:
   - script: |
      if [ -f "jenkins/osx_gcc_openssl.sh" ]
      then
+      echo $IOTHUB_CONNECTION_STRING
       ./jenkins/osx_gcc_openssl.sh
      fi
     displayName: 'build'  
