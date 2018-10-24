@@ -71,7 +71,7 @@ phases:
   - script: |
      if [ -f "jenkins/linux_c_gcc44.sh" ]
      then
-      $IOTHUB_CONNECTION_STRING
+      echo $IOTHUB_CONNECTION_STRING
       sudo ./jenkins/linux_c_gcc44.sh
      fi
     displayName: 'build'
