@@ -72,6 +72,7 @@ phases:
      if [ -f "jenkins/linux_c_gcc44.sh" ]
      then
       echo $IOTHUB_CONNECTION_STRING
+      echo $IOTHUB-CONNECTION-STRING
       sudo ./jenkins/linux_c_gcc44.sh
      fi
     displayName: 'build'
@@ -106,6 +107,7 @@ phases:
      if [ -f "jenkins/linux_c_gcc44.sh" ]
      then
       echo $IOTHUB_CONNECTION_STRING
+      echo $IOTHUB-CONNECTION-STRING
       sudo ./jenkins/linux_c_gcc44.sh
      fi
     env:
